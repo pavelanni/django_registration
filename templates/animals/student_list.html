@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <p>
+    <a href="{% url 'student_add' %}" class="btn btn-primary">Add student</a>
+  </p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Animal</th>
+        <th>Language</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for student in animals %}
+        <tr>
+          <td><a href="{% url 'student_edit' student.pk %}">{{ student.name }}</a></td>
+          <td>{{ student.animal }}</td>
+          <td>{{ student.language }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
