@@ -4,13 +4,13 @@ from django.http import HttpResponse
 from django.views.generic import CreateView, ListView, UpdateView
 from django.urls import reverse_lazy
 
-from animals.models import Student
-from animals.forms import StudentForm
+from students.models import Student
+from students.forms import StudentForm
 
 
 class StudentListView(ListView):
 	model = Student
-	context_object_name = 'animals'
+	context_object_name = 'students'
 
 
 class StudentCreateView(CreateView):
@@ -22,5 +22,5 @@ class StudentCreateView(CreateView):
 class StudentUpdateView(UpdateView):
     model = Student
     form_class = StudentForm
-    template_name = 'animals/student_update_form.html'
+    template_name = 'students/student_update_form.html'
     success_url = reverse_lazy('student_list')

@@ -25,13 +25,13 @@ SECRET_KEY = '2gc8_i%jda4b-+!yf-13xa^-m9r9@pq!51do959r3(ol19ee9t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.opentlc.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'animals.apps.AnimalsConfig',
+    'students.apps.StudentsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

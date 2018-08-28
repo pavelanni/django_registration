@@ -13,7 +13,7 @@
       </tr>
     </thead>
     <tbody>
-      {% for student in animals %}
+      {% for student in students %}
         <tr>
           <td><a href="{% url 'student_edit' student.pk %}">{{ student.name }}</a></td>
           <td>{{ student.animal }}</td>

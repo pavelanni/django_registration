@@ -3,7 +3,7 @@ from django import forms
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
 
-from animals.models import Student
+from students.models import Student
 
 
 class StudentForm(forms.ModelForm):
