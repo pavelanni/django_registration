@@ -1,4 +1,6 @@
 -i https://pypi.org/simple
 django-crispy-forms==1.7.2
 django==2.1
+gunicorn==19.9.0
+psycopg2==2.7.5
 pytz==2018.5
